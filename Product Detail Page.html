@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+   <title>Falcon TLX | Tecknel</title>
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="CSS/product-detail page.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		
+	</script>
+
+  </head>
+
+  <body>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn"><i class="fa fa-arrow-up"></i></button>
+
+<!--header-->
+<div class="header">
+	<div class="header-contents">
+		<div class="logo">
+			<a href="Home.html"><p class="logo-name"><img src="icon/logo1.png" class="Mlogo"  /></p> </a>
+		</div>
+		<div class="menu-list">
+            <ul class="menu">
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <a href="" class="menu-link">Product</a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-link">Gaming Desktop</a>
+                            <a href="#" class="dropdown-link">Laptop</a>
+                            <a href="#" class="dropdown-link">Processor</a>
+                            <a href="#" class="dropdown-link">Motherboard</a>
+                            <a href="#" class="dropdown-link">Memory</a>
+                            <a href="#" class="dropdown-link">Graphics Card</a>
+                            <a href="#" class="dropdown-link">Storage</a>
+                            <a href="#" class="dropdown-link">Power supply</a>
+                            <a href="#" class="dropdown-link">Monitor</a>
+                            <a href="#" class="dropdown-link">Casing</a>
+                            <a href="#" class="dropdown-link">Speaker/Headphone</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="About-Us.html" class="menu-link">About Us</a></li>
+                <li class="menu-item"><a href="Contact-Us.html" class="menu-link">Contact Us</a></li>
+                <li class="menu-item">
+                    <div class="dropdown1">
+                        <a href="" class="menu-link"><img src="icon\login1.png" class="menu-logo"/></a>
+                        <div class="dropdown1-content">
+                            <a href="Sign-In.html" class="dropdown-link"><img src="icon\login.png" class="SM-logo"/></a>
+                            <a href="Sign-Up.html" class="dropdown-link"><img src="icon\signUp.png" class="SM-logo"/></a>
+                            <a href="#" class="dropdown-link1"><img src="icon\logout.png" class="SM-logo"/></a>
+                         </div>
+                    </div>
+                </li>
+                <li class="menu-item">
+                <div class="dropdown2">
+                    <a href="" class="menu-link"><img src="icon\search.png" class="menu-logo"/></a>
+                    <div class="dropdown2-content">
+						<a href="#" class="dropdown-link">
+                        <div class="textField">
+                            <form id="form" class="form">
+                                <input type="text" id="txt"	class="txt" value="Search Here..."/>
+                            </form>
+                            <button class="btn"><i class="fa fa-search"></i></button>
+                        </div>
+                       </a>
+                     </div>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link"><img src="icon\cart.png" class="menu-logo"/></a>
+                </li>                    
+            </ul>
+        </div>
+        </div>
+    </div>
+  
+  
+  
+    <main class="container">
+      <!-- Left Column / Laptop Image -->
+      <div class="left-column">
+        <img data-image="blue" src="Source/blue.jpg">
+        <img data-image="orange" src="Source/orange.jpg">
+        <img data-image="red" class="active" src="Source/red.jpg">
+      </div>
+    
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Falcon Laptops</span>
+          <h1>Falcon TLX</h1>
+          <p>Thin. Light. Fast. Beautiful.
+At only 4.6 pounds and just barely taller than a penny, our latest TLX takes thin & light to a new level for a 16" performance laptop. Built around an NVIDIA GeForce RTX 2060, 2070 & 2080 Max-Q design, and powered by a 4.1GHz Intel 8th Gen Six-Core processor, the TLX is ready for even the most demanding tasks like Virtual Reality. And of course, each one is custom painted uniquely for its owner. </p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="orange" type="radio" id="orange" name="color" value="orange">
+                <label for="orange"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+            </div>
+
+          </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>630$</span>
+          <a href="#" class="cart-btn">Add to cart</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="CSS/product-detail script.js" charset="utf-8"></script>
+    
+    
+    <!--footer-->   
+<div class="footer">
+    <div class="footer-contents">
+        <div class="footer-items">
+            <p class="footer-heading">Contact Us</p>
+            <div class="footer-links">
+                <div class="FL">
+                    <div class="FI">
+                        <img src="icon\call.png" class="FIcon" />
+                    </div>
+                    <div class="FD">
+                        <p class="footer-link">+94771234567</p>
+                    </div>
+                </div>
+                <div class="FL">
+                    <div class="FI">
+                        <img src="icon\location.png" class="FIcon" />
+                    </div>
+                    <div class="FD">
+                        <p class="footer-link">+Main Street Nelliady, Jaffna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-items">
+            <p class="footer-heading">About</p>
+            <div class="footer-links">
+             <a href="aboutus.html" class="f-link"> <p class="footer-link">The Company</p> </a>
+              <p class="footer-link">Terms &amp; Conditions</p>
+            </div>
+        </div>
+
+        <div class="footer-items">
+            <p class="footer-heading">Quick Links</p>
+            <div class="footer-links">
+               <a href="Home.html" class="f-link"> <p class="footer-link">Home</p> </a>
+                <p class="footer-link">FAQ</p>
+            </div>
+        </div>
+        <div class="footer-items">
+            <p class="footer-heading">Follow Us</p>
+            <div class="footer-links">
+                <div class="FL">
+                    <div class="FI">
+                        <img src="icon\fb.png" class="FIcon" />
+                    </div>
+                    <div class="FD">
+                        <p class="footer-link">Facebook</p>
+                    </div>
+                </div>
+                <div class="FL">
+                    <div class="FI">
+                        <img src="icon\insta.png" class="FIcon" />
+                    </div>
+                    <div class="FD">
+                        <p class="footer-link">Instagram</p>
+                    </div>
+                </div>
+                <div class="FL">
+                    <div class="FI">
+                        <img src="icon\twitter.png" class="FIcon" />
+                    </div>
+                    <div class="FD">
+                        <p class="footer-link">Twitter</p>
+                    </div>
+                </div>
+                <div class="FL">
+                    <div class="FI">
+                        <img src="icon\YT.png" class="FIcon" />
+                    </div>
+                    <div class="FD">
+                        <p class="footer-link">YouTube	</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </body>
+</html>
